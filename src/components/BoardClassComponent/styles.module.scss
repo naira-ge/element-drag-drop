@@ -1,0 +1,64 @@
+.containerDrag {
+    display:flex;
+    justify-content: center;
+}
+
+.title {
+    color:#282c34;
+    text-shadow: 1px 1px #6ecae4;
+    align-self: start;
+}
+
+.inProgress {
+    flex: 1;
+    align-items:center;
+    background-color:white;
+    border-radius: .3rem;
+    margin:.5rem 1rem;
+    box-shadow: 1px 2px 5px #6ecae4;
+
+    .chooseElement{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        padding:.5rem;
+    }
+}
+.completedBox {
+    flex: 3;
+    background-color:white;
+    border-radius: .3rem;
+    margin:.5rem 2rem;
+    padding:.5rem;
+    box-shadow: 1px 2px 5px #6ecae4;
+
+    .dropBox {
+        display:grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
+        align-items:center;
+        grid-gap:.3rem;
+        padding:.7rem;
+        border: 1px dotted grey;
+    }
+}
+
+.draggable {
+    display:inline;
+    padding:.5rem;
+    margin: .5rem;
+    transition-timing-function: ease;
+    cursor: grab;
+}
+
+.elementDetails {
+    display:flex;
+    flex-flow:column nowrap;
+
+    .edditable{
+        place-self: flex-end flex-end;
+        margin-bottom:-.7rem;
+        margin-left: -.5rem;
+        padding:0;
+    }
+}
